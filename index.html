@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div class="container">
+    <div class="d-flex login-container">
+      <div class="w-50 img-container">
+        <img class="img-fluid" src="images/login.jpg" alt="">
+      </div>
+      <div class="form d-flex w-50">
+        <form class="" action="">
+          <h2>Login</h2>
+          <div class="d-flex input-group">
+            <i class="fa fa-user"></i>
+            <input type="text">
+            <label class="small-label" for="">Username</label>
+          </div>
+          <div class="d-flex input-group">
+            <i class="fa fa-lock"></i>
+            <input type="password">
+            <label class="small-label" for="">Password</label>
+          </div>
+          <button class="btn-main" type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script>
+    var aInputs = document.getElementsByTagName('input');
+    var aLabel = document.getElementsByTagName('label');
+    for(var i = 0; i < aInputs.length; i++){
+      (function(index){
+        aInputs[index].onblur = function(){
+          aLabel[index].style.fontSize = "0.7rem";
+          aLabel[index].style.top = "5%";
+        }
+      })(i)    
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.img-fluid{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.w-50{
+  width: 50%;
+}
+.d-flex{
+  display: flex;
+}
+.login-container{
+  padding: 0;
+  margin: 5rem;
+  box-shadow: 0px 0px 5px #222;
+}
+.form{
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 3rem;
+}
+.input-group i{
+  padding: 0.8rem 1rem;
+  border: 1px solid #222;
+  background-color: #222;
+  color: #fff;
+}
+.input-group input{
+  padding: 0.8rem 1rem;
+  border-color: #222;
+  font-size: 1.2rem;
+}
+.input-group{
+  margin: 2rem 0;
+  position: relative;
+}
+.small-label{
+  font-size: 1.2rem;
+  position: absolute;
+  left: 25%;
+  top: 30%;
+  transition: 0.3s ease-in-out;
+}
+.input-group input:focus + .small-label{
+  top: 5%;
+  font-size: 0.7rem;
+}
+.btn-main{
+  padding: 1rem 3rem;
+  border: none;
+  background-color: #222;
+  color: #fff;
+  font-size: 1.1rem;
+  transition: 0.4s ease-in-out;
+}
+.btn-main:hover{
+  background-color: #eee;
+  color: #222;
+}
+h2{
+  font-size: 3rem;
+}
+@media(max-width: 500px){
+  .w-50{
+    width: 100%;
+  }
+  .login-container{
+    flex-direction: column;
+    margin: 0.4rem;
+  }
+  .img-container{
+    height: 20rem;
+  }
+  .form{
+    padding: 0.5rem;
+    text-align: center;
+  }
+}
